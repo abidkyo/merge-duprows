@@ -14,9 +14,10 @@ python3 merge_dups_row.py -v -f data.xlsx -g "First Name" -o output.xlsx
 ```
 
 ## Dependencies
-[Pandas](https://pandas.pydata.org/)
+[pandas](https://pandas.pydata.org/)
+[openpyxl](https://openpyxl.readthedocs.io)
 ```bash
-python3 -m pip install pandas
+python3 -m pip install pandas openpyxl
 ```
 
 ## Help Message
