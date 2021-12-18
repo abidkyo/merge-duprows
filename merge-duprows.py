@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 """
-Script to merge duplicates rows by the same values in a column.
+Script to merge duplicate rows by the same values in a column.
 
 - Group the data and apply set function.
 - Expand the set into a dataframe.
@@ -8,7 +8,7 @@ Script to merge duplicates rows by the same values in a column.
 - Concatenate all the created dataframes and export.
 
 Usage:
-    python3 merge_dups_row.py -v -f data.xlsx -g "First Name" -o output.xlsx
+    python3 merge-duprows.py -v -f data.xlsx -g "First Name" -o output.xlsx
 """
 
 
@@ -18,7 +18,7 @@ import pandas as pd
 
 
 # Create argument parser
-parser = argparse.ArgumentParser(description="Merge duplicates rows by the same values in a column.")
+parser = argparse.ArgumentParser(description="Merge duplicate rows by the same values in a column.")
 required_argument = parser.add_argument_group("required named arguments")
 parser.add_argument("-v", "--verbose", action="store_true", help="verbosity")
 required_argument.add_argument("-f", "--file", help="excel filename", required=True)
